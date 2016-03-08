@@ -1,0 +1,46 @@
+1.ami ekta page a dhuke information change kore abar ber hye jawa hche session .ekhn internet
+jane na who am i.so session kore ki shey multiple page a jei information gula lagbe 
+common shegula store kore rakhe.
+2.request variable get method and post method duitar content e get kore.
+3.Navigation is both the system(s) that a 
+visitor can use to move around a website (global navigation, 
+breadcrumb trails, related links, pagination (previous/next page),
+ footer navigation, etc.) and the visual manifestation 
+of such systems (hyperlinked text, tabs, buttons, etc.).
+to tell the user where they are
+to enable the user to go somewhere else
+4.trim whitespace k trim kore dey
+5.stripslashes backslash remove kore
+6.predifined character k html entitites a convert kore
+7.breadcrumb hoche presentation format
+breadcrumb navigation as a dynamic transcrip
+8.enctype="multipart/form-data eta diye server a file upload dichi
+9.option tag er vitore dropdown option ashtse
+10.isset thik kore je Determine if a variable is set and is not NULL
+11.$_get An associative array of variables passed to 
+the current script via the URL parameters.
+12.echo function output kore one or more string
+
+13.There are a two types of HTTP requests that you can send to the server: GET and POST. GET request is when you want to get something from the server. If you want to send something to the server, you must send a POST request. In you case, you want to send your information to the server, that is why you need the POST request.
+
+The code If($_SERVER['REQUEST_METHOD'] == "POST") just checks if the request is POST type then you can specify you next action.
+
+14.option> tag is used within a form for defining options in the drop-down list.
+
+
+<?php
+
+include "config/connect_to_mysql.php";
+if(!isset( $_POST['submit'])){
+    $sq="SELECT * FROM food WHERE ID=$_GET[id]";
+    $res=  mysql_query($sq);
+    $person=  mysql_fetch_array($res);
+}
+?>
+
+
+
+
+
+
+
